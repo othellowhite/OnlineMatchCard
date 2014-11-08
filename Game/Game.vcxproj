@@ -158,6 +158,7 @@
     <Image Include="res\Game.ico" />
     <Image Include="res\GameDoc.ico" />
     <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Game.rc" />

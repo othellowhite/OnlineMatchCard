@@ -23,6 +23,8 @@ DlgResult::~DlgResult()
 void DlgResult::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	
+	DDX_Text(pDX, IDC_SCORE, m_score);
 }
 
 
@@ -31,3 +33,9 @@ END_MESSAGE_MAP()
 
 
 // DlgResult 메시지 처리기입니다.
+
+
+void DlgResult::SetScore(int score)
+{
+	m_score = score;
+}

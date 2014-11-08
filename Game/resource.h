@@ -2,7 +2,6 @@
 // Microsoft Visual C++에서 생성한 포함 파일입니다.
 // Game.rc에서 사용되고 있습니다.
 //
-#define IDD_ABOUTBOX                    100
 #define IDP_OLE_INIT_FAILED             100
 #define IDR_MAINFRAME                   128
 #define IDR_GameTYPE                    129
@@ -28,6 +27,8 @@
 #define IDD_SCOREBOARD                  187
 #define IDD_LEVOF                       188
 #define IDD_RESULT                      189
+#define IDR_TOOLBAR1                    190
+#define IDB_BITMAP20                    191
 #define IDC_SCORELIST                   1000
 #define IDC_HARD                        1002
 #define IDC_EASY                        1003
@@ -42,9 +43,9 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        190
+#define _APS_NEXT_RESOURCE_VALUE        192
 #define _APS_NEXT_COMMAND_VALUE         32775
-#define _APS_NEXT_CONTROL_VALUE         1007
+#define _APS_NEXT_CONTROL_VALUE         1008
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

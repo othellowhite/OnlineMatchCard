@@ -21,4 +21,5 @@ protected:
 public:
 	int m_score;
 	afx_msg void OnEnChangeEdit();
+	void SetScore(int score);
 };

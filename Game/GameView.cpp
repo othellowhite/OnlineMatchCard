@@ -262,7 +262,7 @@ void CGameView::OnMatching(void)
     m_nRowTempIndex = m_nColTempIndex = 0;
 
 	
-	m_myScore-=50; // yoon // 14.11.8 // 점수감산
+	m_myScore-=10; // yoon // 14.11.8 // 점수감산
   }
 
   Invalidate();
@@ -273,6 +273,13 @@ void CGameView::OnMatching(void)
 
 void CGameView::OnSuccess(void)
 {
+	
+  // yoon // 14.11.8 // add code bgn ...
+  DlgResult rDlg; // 결과 점수 출력
+  rDlg.SetScore(m_myScore); 
+  rDlg.DoModal();
+  // yoon // 14.11.8 // add code ... end
+
   int res=AfxMessageBox(_T("게임 오버! 다시 시작하시겠습니까?"), MB_YESNO);
   if(res==IDYES){
 	CGameDoc* pDoc = GetDocument();
@@ -288,9 +295,9 @@ void CGameView::OnSuccess(void)
 	Invalidate();
   }
   else { // yoon // 14.11.8 // add code bgn ...
-	  DlgResult rDlg;
+	  
 	  DlgScoreBoard sDlg; // 점수판 대화상자 호출
-	  rDlg.DoModal();
+	  
 	  sDlg.DoModal();
 	  ExitProcess(0); // 프로그램 종료
   } // yoon // 14.11.8 // add code ... end

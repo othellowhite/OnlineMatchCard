@@ -1,4 +1,5 @@
 #pragma once
+#include "afxwin.h"
 
 // yoon // 14.11.8 // 점수판 대화상자
 // DlgScoreBoard 대화 상자입니다.
@@ -20,4 +21,7 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnLbnSelchangeScorelist();
+	CString m_scoreStr;
+	CListBox m_scoreCtr;
+	virtual BOOL OnInitDialog();
 };
