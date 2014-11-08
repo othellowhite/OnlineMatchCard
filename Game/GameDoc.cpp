@@ -6,6 +6,9 @@
 
 #include "GameDoc.h"
 
+// yoon // 14.11.8 // 난이도설정 추가
+#include "DlgLevelOf.h"
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -25,8 +28,26 @@ CGameDoc::CGameDoc()
 {
 	// TODO: 여기에 일회성 생성 코드를 추가합니다.
 	m_bmCell = CSize(79, 81);
+
+	// yoon // add code bgn ...
+		
+	DlgLevelOf dlgLV; // yoon // 14.11.8 // 난이도 설정 대화상자
+	dlgLV.DoModal();
+
+	switch (dlgLV.m_lv)
+	{
+	case 6 :
+		m_nRow = 2; m_nCol = 3; break;
+	case 20 :
+		m_nRow = 4; m_nCol = 5; break;
+	case 30 :
+		m_nRow = 5; m_nCol = 6; break;
+	}
+	// yoon // add code ... end
+	/*
 	m_nRow = 3;        // 격자의 초기 행 열 값
 	m_nCol = 4;
+	*/// yoon // 14.11.8 // original code
 
 	m_bRandom = true;    // 랜덤하게 그림의 ID 변경 
 	for(int n = 0; n < m_nRow; n++)
@@ -36,6 +57,8 @@ CGameDoc::CGameDoc()
 	 //아무 그림도 선택되지 않은 것으로 인식하기 위해서 초기값을 0으로 설정한다. 
      m_nBmpFirstID = m_nBmpSecondID = 0;
      m_bMouse = false;
+
+
 }
 
 CGameDoc::~CGameDoc()

@@ -110,6 +110,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DlgLevelOf.cpp" />
+    <ClCompile Include="DlgResult.cpp" />
+    <ClCompile Include="DlgScoreBoard.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameDoc.cpp" />
     <ClCompile Include="GameView.cpp" />
@@ -120,6 +123,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DlgLevelOf.h" />
+    <ClInclude Include="DlgResult.h" />
+    <ClInclude Include="DlgScoreBoard.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameDoc.h" />
     <ClInclude Include="GameView.h" />

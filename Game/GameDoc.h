@@ -62,6 +62,7 @@ protected:
 public:
 	void ResizeWindow(void);
 	void OnRandom(void);
+	int m_UsrScore;
 };
 
 

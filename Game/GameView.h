@@ -51,6 +51,8 @@ public:
 	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
 	void OnMatching(void);
 	void OnSuccess(void);
+	afx_msg void OnViewscore();
+	int m_myScore;
 };
 
 #ifndef _DEBUG  // GameView.cpp의 디버그 버전

@@ -7,6 +7,10 @@
 #include "GameDoc.h"
 #include "GameView.h"
 
+// yoon // 14.11.8 // 스코어보드 추가
+#include "DlgResult.h"
+#include "DlgScoreBoard.h"
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -22,6 +26,7 @@ BEGIN_MESSAGE_MAP(CGameView, CView)
 	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CView::OnFilePrintPreview)
 	ON_WM_LBUTTONDOWN()
+	ON_COMMAND(ID_VIEWSCORE, &CGameView::OnViewscore)
 END_MESSAGE_MAP()
 
 // CGameView 생성/소멸
@@ -30,6 +35,7 @@ CGameView::CGameView()
 {
 	// TODO: 여기에 생성 코드를 추가합니다.
 	nMatchCount=0;
+	m_myScore=0;
 }
 
 CGameView::~CGameView()
@@ -56,7 +62,8 @@ void CGameView::OnDraw(CDC* pDC)
 	int nCount = 0;
 
     CDC memDC;
-    CBitmap*  pOldBmp;	
+    CBitmap*  pOldBmp;
+
 
   // 랜덤하게 되어있지 않다면 램덤함수 호출
   if(pDoc->m_bRandom)
@@ -224,6 +231,7 @@ void CGameView::OnMatching(void)
 
    //**********************************************************
 	nMatchCount++;   
+	m_myScore+=100; // yoon // 14.11.8 // 점수가산
    //**********************************************************
   }
   else if(pDoc->m_nBmpFirstID != pDoc->m_nBmpSecondID 
@@ -252,6 +260,9 @@ void CGameView::OnMatching(void)
     pDoc->m_bShow[pDoc->m_nRowIndex][pDoc->m_nColIndex] = false;
     pDoc->m_nBmpFirstID = pDoc->m_nBmpSecondID = 0;
     m_nRowTempIndex = m_nColTempIndex = 0;
+
+	
+	m_myScore-=50; // yoon // 14.11.8 // 점수감산
   }
 
   Invalidate();
@@ -276,4 +287,20 @@ void CGameView::OnSuccess(void)
 	pDoc->m_bMouse = false;
 	Invalidate();
   }
+  else { // yoon // 14.11.8 // add code bgn ...
+	  DlgResult rDlg;
+	  DlgScoreBoard sDlg; // 점수판 대화상자 호출
+	  rDlg.DoModal();
+	  sDlg.DoModal();
+	  ExitProcess(0); // 프로그램 종료
+  } // yoon // 14.11.8 // add code ... end
+}
+
+
+void CGameView::OnViewscore()
+{
+	// TODO: 여기에 명령 처리기 코드를 추가합니다.
+	DlgScoreBoard dlg;
+	dlg.DoModal();
+
 }
