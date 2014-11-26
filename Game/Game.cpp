@@ -16,7 +16,7 @@
 // CGameApp
 
 BEGIN_MESSAGE_MAP(CGameApp, CWinApp)
-	ON_COMMAND(ID_APP_ABOUT, &CGameApp::OnAppAbout)
+//	ON_COMMAND(ID_APP_ABOUT, &CGameApp::OnAppAbout)
 	// 표준 파일을 기초로 하는 문서 명령입니다.
 	ON_COMMAND(ID_FILE_NEW, &CWinApp::OnFileNew)
 	ON_COMMAND(ID_FILE_OPEN, &CWinApp::OnFileOpen)
@@ -106,7 +106,7 @@ BOOL CGameApp::InitInstance()
 
 
 // 응용 프로그램 정보에 사용되는 CAboutDlg 대화 상자입니다.
-
+/*
 class CAboutDlg : public CDialog
 {
 public:
@@ -155,3 +155,4 @@ void CAboutDlg::OnBnClickedOk()
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	CDialog::OnOK();
 }
+*/

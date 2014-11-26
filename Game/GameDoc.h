@@ -63,6 +63,14 @@ public:
 	void ResizeWindow(void);
 	void OnRandom(void);
 	int m_UsrScore;
+	
+	WSADATA wsaData;
+	SOCKET hServSock, hClntSock;
+	SOCKADDR_IN servAddr, clntAddr;
+	int szClntAddr;
+	char isServ;
+
+	UINT AcceptFunc(LPVOID pParam);
 };
 
 

@@ -111,8 +111,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DlgLevelOf.cpp" />
+    <ClCompile Include="DlgMode.cpp" />
     <ClCompile Include="DlgResult.cpp" />
     <ClCompile Include="DlgScoreBoard.cpp" />
+    <ClCompile Include="DlgSockStat.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameDoc.cpp" />
     <ClCompile Include="GameView.cpp" />
@@ -124,8 +126,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DlgLevelOf.h" />
+    <ClInclude Include="DlgMode.h" />
     <ClInclude Include="DlgResult.h" />
     <ClInclude Include="DlgScoreBoard.h" />
+    <ClInclude Include="DlgSockStat.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameDoc.h" />
     <ClInclude Include="GameView.h" />

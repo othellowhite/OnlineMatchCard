@@ -1,0 +1,28 @@
+﻿빌드 시작: 2014-11-26 오전 4:14:14
+2 노드의 "\\psf\Home\Documents\C\OnlineMatchCard\Game\Game.vcxproj" 프로젝트(Build 대상)입니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\Game.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GameDoc.cpp
+  GameDoc.cpp
+GameDoc.cpp(65): warning C4805: '==' : 연산에 'char' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+GameDoc.cpp(70): warning C4805: '==' : 연산에 'char' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+GameDoc.cpp(131): warning C4805: '==' : 연산에 'char' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"\\psf\Home\Documents\C\OnlineMatchCard\Release\Game.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"\\psf\Home\Documents\C\OnlineMatchCard\Release\Game.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\psf\Home\Documents\C\OnlineMatchCard\Release\Game.lib" /MACHINE:X86 /SAFESEH Release\Game.res
+  Release\DlgLevelOf.obj
+  Release\DlgMode.obj
+  Release\DlgResult.obj
+  Release\DlgScoreBoard.obj
+  Release\DlgSockStat.obj
+  Release\Game.obj
+  Release\GameDoc.obj
+  Release\GameView.obj
+  Release\MainFrm.obj
+  Release\stdafx.obj
+  코드를 생성하고 있습니다.
+  코드를 생성했습니다.
+  Game.vcxproj -> \\psf\Home\Documents\C\OnlineMatchCard\Release\Game.exe
+"\\psf\Home\Documents\C\OnlineMatchCard\Game\Game.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:04.50

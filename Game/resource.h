@@ -29,11 +29,20 @@
 #define IDD_RESULT                      189
 #define IDR_TOOLBAR1                    190
 #define IDB_BITMAP20                    191
+#define IDD_MODE                        192
+#define IDD_SOCKSTAT                    193
 #define IDC_SCORELIST                   1000
 #define IDC_HARD                        1002
 #define IDC_EASY                        1003
 #define IDC_VERYHARD                    1004
 #define IDC_SCORE                       1006
+#define IDC_BUTTON1                     1008
+#define IDC_BUTTON2                     1009
+#define IDC_RADIO1                      1009
+#define IDC_RADIO2                      1010
+#define IDC_IPADDR                      1011
+#define IDC_PORT                        1012
+#define IDC_BUTTON                      1013
 #define ID_32771                        32771
 #define ID_32772                        32772
 #define ID_VIEWSCORE                    32773
@@ -43,9 +52,9 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        192
+#define _APS_NEXT_RESOURCE_VALUE        194
 #define _APS_NEXT_COMMAND_VALUE         32775
-#define _APS_NEXT_CONTROL_VALUE         1008
+#define _APS_NEXT_CONTROL_VALUE         1015
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
